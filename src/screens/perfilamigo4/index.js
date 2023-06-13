@@ -22,7 +22,7 @@ import { Icon } from "../../components/Icon/index.js";
 
 // });
 //}
-export function Perfil() {
+export function Perfilamigo4() {
   const navigate = useNavigate();
   return (
     <View style={styles.container}>
@@ -38,7 +38,7 @@ export function Perfil() {
             color={"white"}
             
         ></Icon>
-       <Text style={styles.perfil}>Perfil</Text>
+       
         
           <View style={styles.form}>
           <TextInput
@@ -80,21 +80,6 @@ export function Perfil() {
           
         </TouchableOpacity>
 
-        <TouchableOpacity
-            style={styles.button}
-            onPress={() => navigate("/")}
-        ><Text
-        style={styles.interesses}
-        > <Icon
-        iconFrom={"AntDesign"}
-        icon={"home"}
-        style={styles.iconhome}
-        color={"white"}
-        
-    ></Icon></Text>
-          
-        </TouchableOpacity>
-
         <StatusBar style="auto" />
       </ImageBackground>
     </View>
@@ -118,7 +103,7 @@ const styles = StyleSheet.create({
     borderColor: "#FF4500",
     alignItems: "center",
     paddingTop: 5,
-    margin:20,
+    margin: 100,
 
   },
   login: {
@@ -157,17 +142,13 @@ const styles = StyleSheet.create({
 
   },
   iconInfo:{
-    fontSize:80,
+    padding:10,
+    fontSize:40,
     fontWeight: "bold",
-  
-  },
-  iconhome:{
-    fontSize: 35,
   },
   icon:{
     padding:18,
     fontSize:50,
-    fontSize:200
 
   },
   
@@ -175,11 +156,6 @@ const styles = StyleSheet.create({
     color:"#FFf",
     fontWeight:"bold",
     alignItems:"center"
-  },
-  perfil:{
-    color:"#FF4500",
-    fontWeight:"bold",
-  
   }
 }
 );

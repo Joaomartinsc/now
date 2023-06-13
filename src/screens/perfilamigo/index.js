@@ -63,20 +63,26 @@ export function Perfilamigo() {
             //value={formValue.telefone}
           />
           <TextInput
-              icon="calendar-day"
+              icon="calendar"
               iconFrom="FontAwesome5"
-              label="e-mail"
-            //onChangeText={(text) => handleChange(text, "nascimento")}
-            //value={formValue.nascimento}
+              label="aniversario"
+           
           />
           
         </View>
         <TouchableOpacity
             style={styles.button}
-            onPress={() => navigate("/interesses")}
+            onPress={() => navigate("/")}
         ><Text
         style={styles.interesses}
-        >Meus interesses</Text>
+        > <Icon
+        iconFrom={"AntDesign"}
+        icon={"back"}
+        style={styles.iconInfo}
+        color={"white"}
+        
+    ></Icon>
+   </Text>
           
         </TouchableOpacity>
 
@@ -142,8 +148,8 @@ const styles = StyleSheet.create({
 
   },
   iconInfo:{
-    padding:10,
-    fontSize:40,
+    padding:20,
+    fontSize:25,
     fontWeight: "bold",
   },
   icon:{

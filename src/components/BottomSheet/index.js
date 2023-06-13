@@ -1,9 +1,11 @@
 import React, { useCallback, useRef, useMemo } from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import BottomSheet, { BottomSheetScrollView } from "@gorhom/bottom-sheet";
+import { useNavigate } from "react-router-native";
 import { Icon } from "../../components/Icon/index.js";
 
 const App = ({
+  
   index,
   snapPoints,
   backgroundStyle,
@@ -11,6 +13,7 @@ const App = ({
   data,
   renderItem
 }) => {
+  const navigate = useNavigate();
   const handleSheetChange = useCallback((index) => {
     console.log("handleSheetChange", index);
   }, []);
@@ -38,7 +41,7 @@ const App = ({
           
         <TouchableOpacity
           style={styles.contact}
-          onPress={() => navigate("/")}
+          onPress={() => navigate("/perfilamigo")}
         >
           <Text style={styles.contactText}>Joao</Text>
         </TouchableOpacity>
@@ -46,7 +49,7 @@ const App = ({
 
         <TouchableOpacity
           style={styles.contact}
-          onPress={() => navigate("/")}
+          onPress={() => navigate("/perfilamigo2")}
         >
           <Text style={styles.contactText}>Daniel</Text>
         </TouchableOpacity>
@@ -54,7 +57,7 @@ const App = ({
 
         <TouchableOpacity
           style={styles.contact}
-          onPress={() => navigate("/")}
+          onPress={() => navigate("/perfilamigo3")}
         >
           <Text style={styles.contactText}>gustavo</Text>
         </TouchableOpacity>
@@ -62,7 +65,7 @@ const App = ({
 
         <TouchableOpacity
           style={styles.contact}
-          onPress={() => navigate("/")}
+          onPress={() => navigate("/perfilamigo4")}
         >
           <Text style={styles.contactText}>Heitor</Text>
         </TouchableOpacity>

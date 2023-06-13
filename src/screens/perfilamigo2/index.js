@@ -11,6 +11,7 @@ import { TextInput } from "../../components/TextInput";
 import { useNavigate } from "react-router-native";
 import { Icon } from "../../components/Icon/index.js";
 
+
 //import { useState } from "react";
 
 //export default function Cadastrod() {
@@ -22,8 +23,9 @@ import { Icon } from "../../components/Icon/index.js";
 
 // });
 //}
-export function Perfil() {
+export function Perfilamigo2() {
   const navigate = useNavigate();
+  
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -38,7 +40,7 @@ export function Perfil() {
             color={"white"}
             
         ></Icon>
-       <Text style={styles.perfil}>Perfil</Text>
+       
         
           <View style={styles.form}>
           <TextInput
@@ -63,7 +65,7 @@ export function Perfil() {
             //value={formValue.telefone}
           />
           <TextInput
-              icon="calendar-day"
+              icon="calendar"
               iconFrom="FontAwesome5"
               label="e-mail"
             //onChangeText={(text) => handleChange(text, "nascimento")}
@@ -76,22 +78,7 @@ export function Perfil() {
             onPress={() => navigate("/interesses")}
         ><Text
         style={styles.interesses}
-        >Meus interesses</Text>
-          
-        </TouchableOpacity>
-
-        <TouchableOpacity
-            style={styles.button}
-            onPress={() => navigate("/")}
-        ><Text
-        style={styles.interesses}
-        > <Icon
-        iconFrom={"AntDesign"}
-        icon={"home"}
-        style={styles.iconhome}
-        color={"white"}
-        
-    ></Icon></Text>
+        >Interesses</Text>
           
         </TouchableOpacity>
 
@@ -118,7 +105,7 @@ const styles = StyleSheet.create({
     borderColor: "#FF4500",
     alignItems: "center",
     paddingTop: 5,
-    margin:20,
+    margin: 100,
 
   },
   login: {
@@ -157,17 +144,13 @@ const styles = StyleSheet.create({
 
   },
   iconInfo:{
-    fontSize:80,
+    padding:10,
+    fontSize:40,
     fontWeight: "bold",
-  
-  },
-  iconhome:{
-    fontSize: 35,
   },
   icon:{
     padding:18,
     fontSize:50,
-    fontSize:200
 
   },
   
@@ -175,11 +158,6 @@ const styles = StyleSheet.create({
     color:"#FFf",
     fontWeight:"bold",
     alignItems:"center"
-  },
-  perfil:{
-    color:"#FF4500",
-    fontWeight:"bold",
-  
   }
 }
 );

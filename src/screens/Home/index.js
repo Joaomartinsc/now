@@ -31,7 +31,7 @@ export function Home() {
   useEffect(() => {
     getCurrentLocation().then((value) => {
       console.log(value);
-      setLocation(value);
+      // setLocation(value);
       setRegion(value);
     }).catch((error) => {
       console.log(error);
