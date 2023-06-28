@@ -9,6 +9,7 @@ import {
   Dimensions,
 } from "react-native";
 import { TextInput } from "../../../src/components/TextInput";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useContext, useState, useRef, useMemo, useCallback } from "react";
 import { useNavigate } from "react-router-native";
 
@@ -36,15 +37,19 @@ export function Login() {
   };
 
   return (
+      
+      <KeyboardAwareScrollView>
     <View style={styles.container}>
       <ImageBackground
         source={require("../../../assets/fundo.png")}
         style={styles.imageBackground}
-      >
+        >
+          
         <Image
           source={require("../../../assets/logo.png")}
           style={styles.logo}
-        ></Image>
+          ></Image>
+        
         <View style={styles.form}>
           <TextInput
             icon="mail"
@@ -52,15 +57,17 @@ export function Login() {
             onChangeText={(text) => handleChange(text, "email")}
             value={formValue.email}
           />
+          
           <TextInput
             icon="key"
             iconFrom="FontAwesome5"
             label="Senha"
+            type="password"
             onChangeText={(text) => handleChange(text, "password")}
             value={formValue.password}
           />
           <TouchableOpacity>
-            <Text style={styles.esqueceu} onPress={() => navigate("/sign-up")}>
+            <Text style={styles.esqueceu} onPress={() => navigate("/cadastro")}>
               Esqueceu a senha?
             </Text>
           </TouchableOpacity>
@@ -70,8 +77,11 @@ export function Login() {
         </TouchableOpacity>
 
         <StatusBar style="auto" />
+         
       </ImageBackground>
     </View>
+      </KeyboardAwareScrollView>
+   
   );
 }
 

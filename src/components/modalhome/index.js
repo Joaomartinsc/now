@@ -41,7 +41,8 @@ const PressionavelHome = () => {
 
             <Pressable
               style={[styles.buttonClose]}
-              onPress={() => setModalVisible(!modalVisible)}
+              
+            onPress={() => navigate("/")}
               
             >
                 

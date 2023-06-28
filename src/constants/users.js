@@ -7,8 +7,8 @@ export const USERS = [
     },
     {
         id: 2, 
-        email: 'marcio',
-        password: 'jose',
+        email: 'Joao',
+        password: '123456',
         name: 'Marcio P. Silva',
     },
     {

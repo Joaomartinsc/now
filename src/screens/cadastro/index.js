@@ -8,12 +8,14 @@ import {
 } from "react-native";
 import { TextInput } from "../../components/TextInput";
 import { useNavigate } from "react-router-native";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 
 export function Cadastro() {
   const navigate = useNavigate();
   return (
     <View style={styles.container}>
+     
       <ImageBackground
         source={require("../../../assets/fundo.png")}
         style={styles.imageBackground}
@@ -46,7 +48,7 @@ export function Cadastro() {
 
         <TouchableOpacity
           style={styles.Text}
-          onPress={() => navigate("/login")}
+          onPress={() => navigate("/")}
         >
           <Text style={styles.japossuo}>Já possuo conta</Text>
         </TouchableOpacity>
@@ -61,6 +63,7 @@ export function Cadastro() {
 
         <StatusBar style="auto" />
       </ImageBackground>
+      
     </View>
   );
 }

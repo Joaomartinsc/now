@@ -45,14 +45,14 @@ export function Perfilamigo2() {
           <View style={styles.form}>
           <TextInput
            
-            label="nome"
+            label="Daniel"
             //onChangeText={(text) => handleChange(text, "nome")}
             // value={formValue.nome}
           />
 
           <TextInput
           
-            label="apelido"
+            label="Yazul"
             //onChangeText={(text) => handleChange(text, "apelido")}
             // value={formValue.apelido}
           />
@@ -60,14 +60,14 @@ export function Perfilamigo2() {
           <TextInput
               icon="phone"
               iconFrom="FontAwesome5"
-              label="telefone"
+              label="48 999797997"
             //onChangeText={(text) => handleChange(text, "telefone")}
             //value={formValue.telefone}
           />
           <TextInput
               icon="calendar"
               iconFrom="FontAwesome5"
-              label="e-mail"
+              label="06/07"
             //onChangeText={(text) => handleChange(text, "nascimento")}
             //value={formValue.nascimento}
           />
@@ -75,10 +75,15 @@ export function Perfilamigo2() {
         </View>
         <TouchableOpacity
             style={styles.button}
-            onPress={() => navigate("/interesses")}
-        ><Text
-        style={styles.interesses}
-        >Interesses</Text>
+            onPress={() => navigate("/home")}
+            > 
+            <Icon
+            iconFrom={"AntDesign"}
+            icon={"back"}
+            style={styles.iconInfo}
+            color={"white"}
+            
+        ></Icon>
           
         </TouchableOpacity>
 

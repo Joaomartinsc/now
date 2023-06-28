@@ -16,9 +16,9 @@ export const Router = () => {
   return (
     <NativeRouter>
       <Routes>
-        <Route index path="/" element={<Home />}></Route>
-        <Route path="/home" element={<Login />}></Route>
-        <Route path="/sign-up" element={<Cadastro />}></Route>
+        <Route index path="/" element={<Login />}></Route>
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/cadastro" element={<Cadastro />}></Route>
         <Route path="/cadastrod" element={<Cadastrod />}></Route>
         <Route path="/interesses" element={<Interesses/>}></Route>
         <Route path="/perfil" element={<Perfil/>}></Route>

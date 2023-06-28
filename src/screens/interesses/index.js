@@ -39,7 +39,7 @@ export function Interesses() {
 
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigate("/sign-up")}
+            onPress={() => navigate("/perfil")}
             //onPress={() => Alert.alert("ola")}
           >
             <Text style={styles.text}>Futebol</Text>

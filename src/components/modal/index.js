@@ -27,17 +27,14 @@ const Popup = () => {
             </Pressable>
             
             <Pressable style={[styles.button, styles.buttonClose]}>
-              <Text style={styles.modalText}>Remover/Bloquear</Text>
+              <Text style={styles.modalText}>Remover</Text>
             </Pressable>
             
             <Pressable style={[styles.button, styles.buttonClose]}>
-              <Text style={styles.modalText}>Comp/Localização</Text>
+              <Text style={styles.modalText}>Navegar</Text>
             </Pressable>
             
-            <Pressable
-              style={[styles.button, styles.buttonClose]}>
-              <Text style={styles.modalText}>Vizua/localização</Text>
-            </Pressable>
+          
             
             <Pressable
               style={[styles.button, styles.buttonClose]}
@@ -54,7 +51,7 @@ const Popup = () => {
         <Pressable
           style={[styles.pressionavel, styles.buttonOpen]}
           onPress={() => setModalVisible(true)}>
-          <Text style={styles.textStyle}>Heitor</Text>
+          <Text style={styles.textStyle}>João</Text>
         </Pressable>
       
         <Pressable
@@ -66,13 +63,13 @@ const Popup = () => {
         <Pressable
           style={[styles.pressionavel, styles.buttonOpen]}
           onPress={() => setModalVisible(true)}>
-          <Text style={styles.textStyle}>João</Text>
+          <Text style={styles.textStyle}>Gustavo</Text>
         </Pressable>
       
         <Pressable
           style={[styles.pressionavel, styles.buttonOpen]}
           onPress={() => setModalVisible(true)}>
-          <Text style={styles.textStyle}>GustavoH</Text>
+          <Text style={styles.textStyle}>Heitor</Text>
         </Pressable>
       
       
